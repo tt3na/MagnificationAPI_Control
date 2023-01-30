@@ -1,0 +1,2 @@
+# MagnifyAPI_test
+PowerShellからMagnifyAPIを叩くテスト
