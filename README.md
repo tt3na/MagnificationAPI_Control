@@ -1,5 +1,5 @@
 # MagnifyAPI_test
-PowerShellからMagnifyAPIで拡大鏡を制御するスクリプトです。    
+PowerShellからMagnificationAPIで拡大鏡を制御するスクリプトです。    
 vbsはコンソールを立ち上げずに実行するためのもので、本体はps1ファイルです。  
 名前付きパイプ経由で終了シグナルを受け取ると拡大状態が解除され縮小されます。  
 **拡大するとzoomout.ps1を実行するかプロセスを止めるか再起動しないと元に戻りません。**
