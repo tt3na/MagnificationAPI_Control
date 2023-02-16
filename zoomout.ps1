@@ -1,5 +1,5 @@
 $pipe = New-Object System.IO.Pipes.NamedPipeClientStream ".", "np", InOut
-$pipe.Connect()
+$pipe.Connect(50)
 $buf = New-Object byte[] 1024
 
 $wb = [System.Text.Encoding]::Unicode.GetBytes("exit")
