@@ -16,6 +16,11 @@ Add-Type @"
     }
 "@
 
+$pipe = New-Object System.IO.Pipes.NamedPipeServerStream "np", InOut, 1
+if ($pipe -eq $null){
+ exit
+}
+
 [MagnifyApi]::MagInitialize();
 
 # MagSetFullscreenTransform(zoom_level,XOffset,YOffset);
@@ -24,7 +29,6 @@ Add-Type @"
 
 [MagnifyApi]::MagSetFullscreenTransform(1.5,0,138);
 
-$pipe = New-Object System.IO.Pipes.NamedPipeServerStream "np", InOut
 $pipe.WaitForConnection()
 $buf = New-Object byte[] 1024
 $loop = $true
