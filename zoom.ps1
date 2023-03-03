@@ -24,10 +24,13 @@ if ($pipe -eq $null){
 [MagnifyApi]::MagInitialize();
 
 # MagSetFullscreenTransform(zoom_level,XOffset,YOffset);
-# example: 
-# X: 1P=0 2P=410
+# 例: 
+# 1Pの場合: 
+# [magnifyapi]::magsetfullscreentransform(1.5,0,138);
+# 2Pの場合
+# [magnifyapi]::magsetfullscreentransform(1.5,410,138);
 
-[MagnifyApi]::MagSetFullscreenTransform(1.5,0,138);
+[magnifyapi]::magsetfullscreentransform(1.5,0,138);
 
 $pipe.WaitForConnection()
 $buf = New-Object byte[] 1024
