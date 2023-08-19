@@ -1,4 +1,4 @@
-# MagnificationAPI_test
+# MagnificationAPI_Control
 PowerShellからMagnificationAPIで拡大鏡を制御するスクリプトです。    
 GitHubから移行し現在こちらのリポジトリで更新を行ってます。  
 vbsはコンソールを立ち上げずに実行するためのもので、本体はps1ファイルです。  
