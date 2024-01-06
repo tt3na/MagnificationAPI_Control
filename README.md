@@ -16,6 +16,12 @@ vbsはコンソールを立ち上げずに実行するためのもので、本�
   - ASUS VG258Q(1280x720)で確認
 * 2023/02/16
   - 多重起動しないように修正しました。
+* 2024/01/06
+  - VBSCriptが将来のWindowsリリースで削除すると予告がありました。vbsの代わりに(run-hidden)[https://github.com/stax76/run-hidden] ( stax76様作)で拡大/縮小の制御を推奨します。
+    - run-hiddenの引数にpowershell.exeとPS1ファイルのパスを指定します。これをJoyToKeyでE3ボタンの外部プログラム起動に登録します。
+       ```
+       run-hidden.exe powershell.exe -ExecutionPolicy RemoteSigned -File zoom.ps1
+       ```
 
 ### 注意
 このスクリプトを使用することによって生じる問題等の責任を一切負いません
