@@ -26,11 +26,11 @@ if ($pipe -eq $null){
 # MagSetFullscreenTransform(zoom_level,XOffset,YOffset);
 # 例: 
 # 1Pの場合: 
-# [MagnifyApi]::MagSetFullscreenTransform(1.5,0,138);
+# [MagnifyApi]::MagSetFullscreenTransform(1.5,0,211);
 # 2Pの場合
-# [MagnifyApi]::MagSetFullscreenTransform(1.5,410,138);
+# [MagnifyApi]::MagSetFullscreenTransform(1.5,640,211);
 
-[MagnifyApi]::MagSetFullscreenTransform(1.5,0,138);
+[MagnifyApi]::MagSetFullscreenTransform(1.5,0,211);
 
 $pipe.WaitForConnection()
 $buf = New-Object byte[] 1024
