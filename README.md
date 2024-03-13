@@ -10,7 +10,7 @@ VBScript廃止予告に伴いvbsを使用しないでコンソール画面を立
 ### For beatmania IIDX INFINITAS
 * JoyToKeyでE3/E4をvbsファイル実行 又は "run-hidden.exe + スクリプト実行" に割り当てることによって演奏レーンに合わせて拡大縮小できます。
   - この他にもファンクションキーやWindowsキーに絡むショートカットキーが殆どほとんど使えないという制約を回避して実行する方法が存在し、尚且別窓が立ち上がらなければ好きなタイミングで拡大縮小ができると思います。
-  - [参考](https://note.3naly.xyz/view.php?id=00002)  
+    [参考](https://note.3naly.xyz/view.php?id=00002)  
 * 2P側の場合はMagSetFullscreenTransform関数の2番目の引数を書き換えてください。
   - 1.5,0,211 --> 1.5,640,211
 * 拡大した状態でINFINITASを起動してください。
